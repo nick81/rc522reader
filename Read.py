@@ -31,7 +31,7 @@ print "Press Ctrl-C to stop."
 
 # This loop keeps checking for chips. If one is near it will get the UID and authenticate
 while continue_reading:
-    time.sleep(0.001)
+    time.sleep(0.002)
     # Scan for cards    
     (status,TagType) = MIFAREReader.MFRC522_Request(MIFAREReader.PICC_REQIDL)
 
